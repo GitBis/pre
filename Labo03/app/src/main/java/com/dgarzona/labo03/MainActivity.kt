@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     private fun setListeners() {
 
         cincoCentavo.setOnClickListener{
-            suma+= 0.05
+            suma+=0.05
             var redondear = (suma*1000.0).roundToInt().toDouble()/1000.0
             resultado.text = redondear.toString()
         }
